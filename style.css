@@ -4,8 +4,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-.hero-section {
-    background-image: url(project\ photo.webp);
+.hero-section {    background-image: url(project\ photo.webp);
     height: 100vh;
     background-size: cover;
     background-position: center;

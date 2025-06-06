@@ -154,22 +154,62 @@ ul li{
 .form-contaier input[type="submit"]:hover {
     background-color: #2980b9;
 }
-input,
-select{
-    padding: 5px;
-    font-size: 15px;
+/* Premium Responsive Styles */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 
-}
-@media only screen and (max-width:500px){
-    .hero-text>h1{
-        font-size: 20px;
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .room-type-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .room-image, .room-list {
+        width: 100%;
+    }
+
+    .room-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .about-us {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    .form-contaier input[type="text"],
+    .form-contaier input[type="email"],
+    .form-contaier input[type="date"],
+    .form-contaier input[type="number"],
+    .form-contaier select,
+    .form-contaier input[type="submit"] {
+        width: 100%;
     }
 }
-@media only screen and (min-width:501px) and (max-width:980px){
-    .hero-text>h1{
-        font-size:30px;
-    }
-    p{
-        font-size: 20px;
-    }
-} 
+
+/* Optional Premium Effects */
+.book-button,
+.know-button {
+    transition: background 0.3s ease;
+}
+
+.book-button:hover,
+.know-button:hover {
+    background-color: #0097a7;
+    color: #fff;
+}
+
+.room-image img {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
